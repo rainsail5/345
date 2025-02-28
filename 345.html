@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全世界最可爱闪耀的女孩们</title>
+    <style>
+        body {
+            font-family: '幼圆';
+            background-color: #FFE4E1; /* 低饱和度粉色背景 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+      .button-container {
+            margin-top: 20px;
+        }
+
+      .pink-button {
+            background-color: #FFB6C1; /* 粉色按钮 */
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 4px 2px;
+        }
+
+      .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://p3-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/908fea43d5db4fac8a8dcdbacd7039c2.jpg~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1743347780&x-signature=DwLnmQpm6hiEqXh6woa4bBQzydo%3D"
+        alt="合照">
+    <div class="button-container">
+        <button class="pink-button" onclick="showPopup('popup1')">飒飒</button>
+        <button class="pink-button" onclick="showPopup('popup2')">格格</button>
+        <button class="pink-button" onclick="showPopup('popup3')">沐沐</button>
+        <button class="pink-button" onclick="showPopup('popup4')">礼礼</button>
+    </div>
+
+    <!-- 飒飒弹窗 -->
+    <div id="popup1" class="popup">
+        <p>飒飒：集美貌和才华于一身的律政俏佳人，我明媚又正义的大律师姐姐，再次点击欣赏美照</p>
+        <img id="sasa-img" src="" alt="飒飒" style="display: none;">
+        <button onclick="showImage('sasa-img', 'https://p3-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/071ca95e419b43a8870bcd85aa707def.jpg~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1743347780&x-signature=9v2MH1FCpSFIEoPwdk8JmMHpTwU%3D')">再次点击</button>
+    </div>
+
+    <!-- 格格弹窗 -->
+    <div id="popup2" class="popup">
+        <p>格格：有趣的灵魂与柔软的心脏，温柔美丽的外表与细腻的性格，任何人见到都会爱上她，再次点击欣赏美照</p>
+        <img id="gege-img" src="" alt="格格" style="display: none;">
+        <button onclick="showImage('gege-img', 'https://p3-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/3a1bbce972c04a47951dc6015affc3c7.jpg~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1743347780&x-signature=7TAcD%2F5K4aAR1uU%2FuEvw9ySumOA%3D')">再次点击</button>
+    </div>
+
+    <!-- 沐沐弹窗 -->
+    <div id="popup3" class="popup">
+        <p>沐沐：似乎有无论何时都能运筹帷幄的能力，也有蹲下与小猫轻语的柔软，你应该会为她微微上扬的嘴角着迷，再次点击欣赏美照</p>
+        <img id="mumu-img" src="" alt="沐沐" style="display: none;">
+        <button onclick="showImage('mumu-img', 'https://p3-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/d79191c846a742f9a124fd4da10c79ad.jpg~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1743347780&x-signature=Rm9VL62DiG7bKPmy61pz5Gnkqjs%3D')">再次点击</button>
+    </div>
+
+    <!-- 礼礼弹窗 -->
+    <div id="popup4" class="popup">
+        <p>礼礼：被朋友们深爱着的小女孩，我想我会成为一名优秀的资深新闻工作者</p>
+        <img id="lili-img" src="" alt="礼礼" style="display: none;">
+        <button onclick="showImage('lili-img', 'https://p3-bot-sign.byteimg.com/tos-cn-i-v4nquku3lp/cfc0557c73754beeb9942a22aa838f39.jpg~tplv-v4nquku3lp-image.image?rk3s=68e6b6b5&x-expires=1743347780&x-signature=bMcleYNGfXd3eP6PHNJAIRElrlk%3D')">再次点击</button>
+    </div>
